@@ -107,7 +107,6 @@ public class DriverFactory {
         currentDriver().manage().window().setSize(new Dimension(width, height));
     }
 
-
     public static void waitForUrlContains(String urlChunk) {
         WebDriverWait wait = new WebDriverWait(currentDriver(), Duration.ofSeconds(10));
         wait.until(ExpectedConditions.urlContains(urlChunk));

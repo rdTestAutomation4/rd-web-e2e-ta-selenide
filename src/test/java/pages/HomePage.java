@@ -10,14 +10,7 @@ public class HomePage extends BasePage{
     public SelenideElement btnAddCartSauceLabsBackpack = $("button[data-test=\"add-to-cart-sauce-labs-backpack\"]");
     public SelenideElement btnRemoveCartSauceLabsBackpack = $("button[data-test=\"remove-sauce-labs-backpack\"]");
 
-
     public HomePage(String pageUrl) {
         super(pageUrl);
     }
-
-
-
-
-
-
 }

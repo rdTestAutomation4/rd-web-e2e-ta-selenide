@@ -1,12 +1,8 @@
 package pages;
 
-import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
-import com.codeborne.selenide.WebDriverRunner;
-import driver.DriverFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 
-import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Selenide.$;
 
 public class LoginPage extends BasePage{
 
@@ -28,6 +24,4 @@ public class LoginPage extends BasePage{
     public String getLoginError(){
         return lblLoginError.getText();
     }
-
-
 }

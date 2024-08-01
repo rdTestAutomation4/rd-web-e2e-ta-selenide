@@ -15,7 +15,7 @@ public class HomePageTest extends BaseTest{
 
     @Test
     public void addProductToCart(){
-        pageManager.homePage.btnAddCartSauceLabsBackpack.click();;
+        pageManager.homePage.btnAddCartSauceLabsBackpack.click();
         assertThat(pageManager.homePage.btnRemoveCartSauceLabsBackpack.isDisplayed()).isTrue();
     }
 }

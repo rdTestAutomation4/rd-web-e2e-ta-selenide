@@ -6,7 +6,6 @@ import pages.LoginPage;
 
 public class PageManager {
     public LoginPage loginPage;
-
     public HomePage homePage;
 
     public PageManager() {

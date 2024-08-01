@@ -6,6 +6,8 @@ import org.testng.annotations.*;
 import org.testng.asserts.SoftAssert;
 import common.PageManager;
 
+import static driver.DriverFactory.maximize;
+
 public class BaseTest {
     protected PageManager pageManager;
     protected SoftAssert softAssert;
@@ -14,9 +16,11 @@ public class BaseTest {
         pageManager = new PageManager();
         softAssert = new SoftAssert();
     }
+
     @BeforeMethod
     public void openDriver() {
         Selenide.open();
+        maximize();
     }
 
     @AfterMethod
